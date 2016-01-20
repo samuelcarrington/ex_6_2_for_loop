@@ -24,7 +24,7 @@ namespace ex_6_2_for_loop
             */
 
             //read the array from the console
-            Console.WriteLine("Number of elements in your list = ");
+            Console.WriteLine("Enter the number of integers in your series = ");
             int n = int.Parse(Console.ReadLine());
 
             //Declaring the array
