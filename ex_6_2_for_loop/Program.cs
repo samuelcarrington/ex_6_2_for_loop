@@ -47,7 +47,7 @@ namespace ex_6_2_for_loop
                 if (lowestFound > i)
                 {
                     lowestFound = i;
-                    Console.WriteLine("Smallest Integer = " + lowestFound);
+                    
                 }
             }
             // This will track the highest number found
@@ -57,12 +57,14 @@ namespace ex_6_2_for_loop
             {
                 // By using int.minValue as the initial value,
                 // this check will usually succeed.
-                if (highestFound > i)
+                if (highestFound < i)
                 {
                     highestFound = i;
-                    Console.WriteLine("Largest Integer = " + highestFound);
+                    
                 }
             }
+            Console.WriteLine("Smallest Integer = " + lowestFound);
+            Console.WriteLine("Largest Integer = " + highestFound);
             Console.ReadKey();
         }
     }
